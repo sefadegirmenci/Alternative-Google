@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Roz Engine</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container mr-0 mt-2">
+        <div class="row">
+            <!-- ml-auto makes the columns right justified -->
+            <div class="col-auto ml-auto mt-2">
+                <div class="upper-nav">
+                    <a href="index.html">Google Search</a>
+                </div>
+            </div>
+            <div class="col-auto mt-2">
+                <div class="upper-nav">
+                    <a href="advanced.html">Advanced Search</a>
+                </div>
+            </div>
+            <div class="col-auto mt-0">
+                <img src="avatar.png" width="35px">
+            </div>
+
+        </div>
+    </div>
+    <!-- w-50 makes the container wrap %50 -->
+    <div class="container w-50 h-100 w-100">
+        <form action="https://www.google.com/search" class="h-100">
+            <div class="main-search h-100 ">
+                <!-- first row occupies first 50% height, second row gets the rest
+                column is align-self-end so that it appears at the bottom of 50% -->
+                <div class="row h-50">
+                    <!-- d-flex justify-content-* is used to justify content at desired positions -->
+                    <div class="col-12  d-flex justify-content-center align-self-end">
+                        <div id="logo">
+                            <a href="index.html">
+                                <img src="logo.png"
+                                    class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}"
+                                    alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-5 col-12 ml-auto m-0 pl-0 mb-3">
+                        <div id="search_input">
+                            <input type="text" placeholder="What you want to find?" class="form-control" name="q"
+                                id="search" aria-describedby="helpId">
+                            <input type="text" name="tbm" value="isch" hidden> 
+                        </div>
+                    </div>
+                    <div class="col-lg-2 mr-lg-auto mr-sm-auto col-6 pr-0 ">
+                        <div id="button">
+                            <button type="submit"
+                                class="btn mb-2 mb-md-0 btn-outline-secondary btn-block">Search</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+    </div>
+    </form>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
