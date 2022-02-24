@@ -5,7 +5,7 @@
     <title>Roz Engine</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="css/ionicons.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -34,10 +34,57 @@
 
         </div>
     </div>
-    <div class="top-banner">
+    <div class="advanced-search-text">
         Advanced Search
     </div>
-    
+    <hr class="mb-4 mt-4"/>
+    <form action="https://www.google.com/search" class="advanced-form w-100">
+        <div class="container p-0 m-0 w-100">
+            <ul class="filter-list w-100">
+                <div class="find-pages-text">
+                    <strong> Find pages with…</strong>
+                </div>
+                <div class="row w-100 mt-3">
+                    <div class="col-lg-3 col-6 mt-1">
+                        All these words:
+                    </div>
+                    <div class="col-lg-3 col-6 m-0 p-0">
+                        <input type="text" class="form-control" name="as_q" id="" aria-describedby="helpId" placeholder="">
+                    </div>
+                </div>
+                <div class="row w-100 mt-3">
+                        <div class="col-lg-3 col-6 mt-1">
+                            This exact word or phrase:
+                        </div>
+                        <div class="col-lg-3 col-6 m-0 p-0">
+                            <input type="text" class="form-control" name="as_epq" id="" aria-describedby="helpId" placeholder="">
+                        </div>
+                </div>
+                <div class="row w-100 mt-3">
+                    <div class="col-lg-3 col-6 mt-1">
+                        Any of these words:
+                    </div>
+                    <div class="col-lg-3 col-6 m-0 p-0">
+                        <input type="text" class="form-control" name="as_oq" id="" aria-describedby="helpId" placeholder="">
+                    </div>
+                </div>
+                <div class="row w-100 mt-3">
+                    <div class="col-lg-3 col-6 mt-1">
+                        None of these words:
+                    </div>
+                    <div class="col-lg-3 col-6  m-0 p-0">
+                        <input type="text" class="form-control" name="as_eq" id="" aria-describedby="helpId" placeholder="">
+                    </div>
+                </div>
+                <div class="row w-100">
+                    <div class="col-lg-6 col-12">
+                        <button type="submit" class="btn btn-round btn-outline-secondary mt-4 px-5">Submit</button>
+                        
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </form>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
